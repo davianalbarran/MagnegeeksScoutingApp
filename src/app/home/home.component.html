@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" routerLink="">Union City Magnegeeks</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="teams">Teams</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="rankings">Rankings</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+<body>
+    <h1><b>Welcome to the Magnegeeks' Scouting App!</b></h1>
+    <div class="container-fluid p-1 my-3 bg-dark text-white" id="boxed1">
+          <div *ngFor="let team of team8" class="row border-bottom border-secondary">
+            <div class="col-lg-12" id="top8">
+              <a routerLink="team/:name"><b>{{team}}</b></a>
+            </div>
+          </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <button type="button" class="btn btn-dark btn-outline-secondary" routerLink='teams'><b>See Teams!</b></button>
+            </div>
+            <div class="col-lg-6">
+                <button type="button" class="btn btn-dark btn-outline-secondary" routerLink='rankings'><b>See Rankings for Whole Event!</b></button>
+            </div>
+        </div>
+    </div>
+</body>
+
