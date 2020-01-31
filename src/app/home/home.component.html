@@ -1,23 +1,15 @@
-<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-    <a class="navbar-brand" routerLink="">Union City Magnegeeks</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="teams">Teams</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="rankings">Rankings</a>
-        </li>
-      </ul>
-    </div>
-</nav>
-
 <body>
-    <h1><b>Welcome to the Magnegeeks' Scouting App!</b></h1>
+    <h1>Welcome to the Magnegeeks' Scouting App!</h1>
+    <mat-grid-list cols="1" rowHeight="fit" style="height: 400px" gutterSize="0px">
+      <div *ngFor="let team of team8">
+        <mat-grid-tile><a routerLink="teams">{{team}}</a></mat-grid-tile>
+      </div>
+    </mat-grid-list>
+    <mat-grid-list cols="2" rowHeight="fit" style="height: 50px" gutterSize="0px">
+      <mat-grid-tile><a routerLink="teams">See All Teams!</a></mat-grid-tile>
+      <mat-grid-tile><a routerLink="rankings">See the Rankings for the Whole Event!</a></mat-grid-tile>
+    </mat-grid-list>
+    <!--
     <div class="container-fluid p-1 my-3 bg-dark text-white" id="boxed1">
           <div *ngFor="let team of team8" class="row border-bottom border-secondary">
             <div class="col-lg-12" id="top8">
@@ -33,5 +25,5 @@
             </div>
         </div>
     </div>
+    -->
 </body>
-

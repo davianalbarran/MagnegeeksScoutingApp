@@ -2,6 +2,9 @@ h1 {
     text-align: center;
     padding-top: 100px;
 }
+a {
+    color: lightgreen;
+}
 .border-bottom {
     border-width: 960 px !important;
 }
@@ -11,4 +14,9 @@ h1 {
 #boxed1 {
     padding-left: 100px;
     text-align: center;
+}
+
+mat-grid-tile {
+    background-color: rgb(7, 16, 133);
+    color: lightgreen;
 }
